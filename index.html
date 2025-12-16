@@ -11,14 +11,23 @@
 
 <!-- NAVBAR -->
 <nav class="navbar">
+  <div class="nav-top">
     <div class="logo">✨ Rocío SDR</div>
-    <ul>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#objetivos">Objetivos</a></li>
-        <li><a href="#proceso">Proceso</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#objetivos">Objetivos</a></li>
+    <li><a href="#proceso">Proceso</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
 </nav>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 
 
 <!-- HERO -->
@@ -27,7 +36,14 @@
         <h1 class="title-main">Propuesta SDR Externo/Freelance</h1>
         <h3 class="sub-main">Blasina Rocio</h3>
         <p class="hero-text">Generación de leads + calificación + reuniones reales con prospectos listos para convertir.</p>
-        <a href="#contacto" class="btn-hero">Agendar reunión</a>
+       <a 
+  href="https://calendly.com/ro-blasina/generacion-de-leads" 
+  class="btn-hero" 
+  target="_blank" 
+  rel="noopener"
+>
+  Agendar reunión
+</a>
     </div>
 </header>
 
@@ -56,7 +72,8 @@
 
 
 <!-- PROCESO -->
-<section class="proceso">
+<section id="proceso" class="proceso">
+
     <div class="contenedor">
         <h2>Proceso de Trabajo</h2>
 
@@ -90,6 +107,50 @@
     </div>
 </section>
 
+<section id="precios" class="precios">
+  <h2>Planes & Precios</h2>
+  <p class="precios-sub">
+    Generación de oportunidades reales a través de LinkedIn para empresas en LATAM.
+  </p>
+
+  <div class="grid-precios">
+
+    <div class="precio-card">
+      <h3>Generación de Leads</h3>
+      <span class="precio">USD 300 / mes</span>
+      <ul>
+        <li>Prospección en LinkedIn</li>
+        <li>Segmentación por región, industria y rol</li>
+        <li>40 contactos calificados por día</li>
+        <li>Secuencia de mensajes en frío</li>
+        <li>Leads con respuesta de interés</li>
+      </ul>
+      <a href="https://calendly.com/ro-blasina/generacion-de-leads" target="_blank" class="btn-precio">
+        Agendar reunión
+      </a>
+    </div>
+
+    <div class="precio-card destacado">
+      <h3>Generación de Reuniones</h3>
+      <span class="precio">USD 500 / mes</span>
+      <ul>
+        <li>Todo el plan de Leads</li>
+        <li>Calificación avanzada</li>
+        <li>Seguimientos activos</li>
+        <li>Coordinación de agendas</li>
+        <li>Acompañamiento comercial</li>
+      </ul>
+      <a href="https://calendly.com/ro-blasina/generacion-de-leads" target="_blank" class="btn-precio">
+        Agendar reunión
+      </a>
+    </div>
+
+  </div>
+
+  <p class="nota-precio">
+    * Inicio con 50% del fee mensual. Comienzo estimado: 7 días tras el pago.
+  </p>
+</section>
 
 
 
@@ -105,6 +166,14 @@
     <p><a target="_blank" href="https://wa.me/5492236150664">WhatsApp</a></p>
     <p><a target="_blank" href="https://www.linkedin.com/in/c-rocio-blasina-39b668254/">LinkedIn</a></p>
 </footer>
+
+
+
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
